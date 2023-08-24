@@ -2164,8 +2164,8 @@ input, select, textarea {
 
 	.wrapper {
 		background: #fff;
-		margin: 0 0 2em 0;
-		padding: 6em 0 6em 0;
+		padding: 2em 0 2em 0;
+		height: 67.3vh;
 	}
 
 		.wrapper.style2 {
@@ -2182,7 +2182,7 @@ input, select, textarea {
 		background-attachment: fixed;
 		color: #fff;
 		text-align: center;
-		padding: 7.5em 0 2em 0;
+		padding: 6em 0 2em 0;
 		cursor: default;
 	}
 
@@ -2199,10 +2199,14 @@ input, select, textarea {
 			margin: 0;
 			display: inline-block;
 			vertical-align: middle;
+			background-color: rgba(0, 0, 0, 0.25);
+			border-radius: 1em;
+			padding: 1em;
 		}
 
 		#header header {
 			display: inline-block;
+			width: 800px;
 		}
 
 			#header header > p {
@@ -2229,6 +2233,27 @@ input, select, textarea {
 			text-align: center;
 			font-size: 1.25em;
 			padding: 0;
+		}
+
+		#social-links-container{
+			display: flex;
+			justify-content: center;
+			gap: 2em;
+		}
+		
+		#tech-stack-container {
+			display: flex;
+			flex-wrap: wrap;
+			row-gap: 1em;
+			column-gap: 2em;
+		}
+
+		#tech-stack-container div {
+			background-color: #969696;
+			border: 1px solid black;
+			padding: 8px 14px;
+			border-radius: 10px;
+			color: black;
 		}
 
 		#header hr {
@@ -2459,7 +2484,6 @@ input, select, textarea {
 	#footer {
 		position: relative;
 		overflow: hidden;
-		padding: 6em 0 6em 0;
 		background: #2b252c;
 		color: #fff;
 	}
