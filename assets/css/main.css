@@ -76,6 +76,8 @@ input, select, textarea {
 
 	html {
 		box-sizing: border-box;
+		margin: 0;
+		height: 100%;
 	}
 
 	*, *:before, *:after {
@@ -89,6 +91,8 @@ input, select, textarea {
 		line-height: 1.85em;
 		font-family: 'Source Sans Pro', sans-serif;
 		font-weight: 300;
+		margin: 0;
+		height: 100%;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -101,6 +105,23 @@ input, select, textarea {
 			-ms-transition: none !important;
 			transition: none !important;
 		}
+
+	#page-wrapper{
+		display: grid;
+		margin: 0;
+    	height: 100%;
+		grid-template-columns: 1fr;
+		grid-template-rows: 110px 1fr 150px;
+		grid-template-areas: "header" "main" "footer";
+	}
+
+	#header{
+		grid-area: header;
+	}
+
+	.wrapper{
+		grid-area: main;
+	}
 
 	input, textarea, select {
 		font-size: 15pt;
@@ -1745,7 +1766,8 @@ input, select, textarea {
 /* Sections/Article */
 
 	section, article {
-		margin-bottom: 3em;
+		margin-top: 1em;
+		margin-bottom: 1em;
 	}
 
 		section > :last-child, section:last-child, article > :last-child, article:last-child {
@@ -2165,7 +2187,6 @@ input, select, textarea {
 	.wrapper {
 		background: #fff;
 		padding: 2em 0 2em 0;
-		height: 67.3vh;
 	}
 
 		.wrapper.style2 {
@@ -2182,7 +2203,7 @@ input, select, textarea {
 		background-attachment: fixed;
 		color: #fff;
 		text-align: center;
-		padding: 6em 0 2em 0;
+		padding: 2em 0 2em 0;
 		cursor: default;
 	}
 
