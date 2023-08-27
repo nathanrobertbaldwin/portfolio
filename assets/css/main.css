@@ -1930,7 +1930,7 @@ input, select, textarea {
 
 	ul.icons {
 		position: relative;
-		background: rgba(128, 128, 128, 0.05);
+		background-color: rgb(56, 74, 97);
 		border-radius: 4em;
 		display: inline-block;
 		padding: 0.35em 0.75em 0.35em 0.75em;
@@ -2201,7 +2201,7 @@ input, select, textarea {
 		background-size: cover;
 		background-position: center center;
 		background-attachment: fixed;
-		color: #fff;
+		color: #000000;
 		text-align: center;
 		padding: 2em 0 2em 0;
 		cursor: default;
@@ -2209,25 +2209,28 @@ input, select, textarea {
 
 		#header:before {
 			content: '';
-			display: inline-block;
+			display: inline-block; 
 			vertical-align: middle;
 			height: 100%;
 		}
 
 		#header .inner {
-			position: relative;
+			position: absolute;
+			left: 100px;
+			top: 350px;
 			z-index: 1;
 			margin: 0;
 			display: inline-block;
-			vertical-align: middle;
-			background-color: rgba(0, 0, 0, 0.25);
+			background-color: rgba(0, 0, 0, 0.9);
+			border: 1px solid grey;
 			border-radius: 1em;
 			padding: 1em;
+			color: rgb(255, 255, 255);
 		}
 
 		#header header {
 			display: inline-block;
-			width: 800px;
+			width: 850px;
 		}
 
 			#header header > p {
@@ -2270,11 +2273,11 @@ input, select, textarea {
 		}
 
 		#tech-stack-container div {
-			background-color: #969696;
-			border: 1px solid black;
+			background-color: rgb(57, 86, 112);
+			border: 1px solid grey;
 			padding: 8px 14px;
 			border-radius: 10px;
-			color: black;
+			color: rgb(255, 255, 255);
 		}
 
 		#header hr {
@@ -2298,12 +2301,13 @@ input, select, textarea {
 	}
 
 		body.homepage #header h1 {
-			font-size: 4em;
+			font-size: 3em;
+			padding-top: .5em;
 		}
 
 		body.homepage #header:after {
 			content: '';
-			background: #1C0920;
+			background: rgb(139, 186, 241);
 			display: block;
 			position: absolute;
 			left: 0;
@@ -2333,9 +2337,11 @@ input, select, textarea {
 		left: 0;
 		width: 100%;
 		text-align: center;
-		padding: 1.5em 0 1.5em 0;
+		padding: 1.8em 0 1.8em 0;
 		z-index: 1;
 		overflow: hidden;
+		color: white;
+		background-color: rgb(57, 86, 112);
 	}
 
 		#nav > ul {
@@ -2505,7 +2511,7 @@ input, select, textarea {
 	#footer {
 		position: relative;
 		overflow: hidden;
-		background: #2b252c;
+		background: rgb(57, 86, 112);
 		color: #fff;
 	}
 
@@ -2880,6 +2886,7 @@ input, select, textarea {
 			ul.icons {
 				font-size: 1em;
 				padding: 0.35em 0.5em 0.35em 0.5em;
+				color: black;
 			}
 
 				ul.icons li a {
